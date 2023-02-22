@@ -1,6 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import { useState, useEffect } from 'react';
 import Card from '../../components/Card'
+import Link from 'next/link';
 function Questions() {
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState([]);
@@ -28,12 +29,19 @@ function Questions() {
       ) : (
         <div>
           {questions.map((question) => (
-            <Card
+            <Link
               key={question.question_id}
-              title={question.title}
-              views={question.view_count}
-              answers={question.answer_count}
-            />
+              href={`/questions/${question.question_id}`}
+            >
+              <div className={styles['card-link']}>
+                <Card
+                  key={question.question_id}
+                  title={question.title}
+                  views={question.view_count}
+                  answers={question.answer_count}
+                />
+              </div>
+            </Link>
           ))}
         </div>
       )}

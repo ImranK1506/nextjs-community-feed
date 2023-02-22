@@ -290,7 +290,6 @@
 }
 
 .header-title {
-  height: 64px;
   pointer-events: none;
 }
 
@@ -302,11 +301,15 @@
   margin: 5%;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 /* Card */
 .card-wrapper {
   text-align: left;
-  padding: 1%;
-  background: lightGray;
+  padding: 0.30%;
+  background: white;
   border-radius: 5px;
   margin-bottom: 2%;
 }
@@ -314,11 +317,20 @@
 .card-title {
   width: 100%;
   padding-bottom: 10px;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid darkGray;
   color: black;
 }
 
 .card-count {
-  color: darkGray;
+  margin: 10px 0;
+  color: black;
+}
+
+/* Question detail */
+.question-detail-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 5%;
 }
