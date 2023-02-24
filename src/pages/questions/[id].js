@@ -33,7 +33,7 @@ function QuestionDetail() {
         <Card
           title={question.title}
           views={question.view_count}
-          answers={question.answers_count}
+          answers={question.answer_count}
         />
       )}
     </div>
