@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import styles from '@/styles/Home.module.css'
 import { useState, useEffect } from 'react';
 import Card from '../../components/Card';
+import Head from 'next/head';
 
 function QuestionDetail() {
   const router = useRouter();
@@ -30,11 +31,17 @@ function QuestionDetail() {
       {loading ? (
         <span>Loading...</span>
       ) : (
-        <Card
-          title={question.title}
-          views={question.view_count}
-          answers={question.answer_count}
-        />
+        <>
+          {/* SEO */}
+          <Head>
+            <title>{question.title}</title>
+          </Head>
+          <Card
+            title={question.title}
+            views={question.view_count}
+            answers={question.answer_count}
+          />
+        </>
       )}
     </div>
   );
