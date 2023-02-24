@@ -1,4 +1,10 @@
+![](https://img.shields.io/badge/next%20js-13.1.6-blue) ![](https://img.shields.io/badge/Yarn-1.22.19-%232C8EBB) ![](https://img.shields.io/badge/npm-8.19.2-blue) ![](https://img.shields.io/badge/styled--components-5.3.6-blue)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Server Side Rendering with NextJs
+
+Community feed app (Stackoverflow API) using server side rendering with `getServerSideProps`.
 
 ## Getting Started
 
@@ -31,8 +37,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### View
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+View the [result](https://whimsical-naiad-30982e.netlify.app/)
