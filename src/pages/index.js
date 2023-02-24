@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import Questions from './questions';
+import Questions, {
+  getServerSideProps as getServerSidePropsQuestions,
+} from './questions';
 
-const inter = Inter({ subsets: ['latin'] })
+export function getServerSideProps(context) {
+  return getServerSidePropsQuestions(context);
+}
 
-export default function Home() {
-  return <Questions />;
+export default function Home(props) {
+  return <Questions {...props} />;
 }
