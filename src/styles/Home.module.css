@@ -338,22 +338,25 @@
 /* Pagination */
 .pagination-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .pagination-link {
   cursor: pointer;
   color: black;
   border-radius: 5px;
-  background: white;
+  background: orange;
+  padding: 1%;
+  margin: 0 10px;
 }
 
 .pagination-link:hover {
-    color: dodgerblue;
+  color: black;
 }
 
-.pagination-link:disabled {
+.pagination-link[disabled] {
   background: lightgrey;
+  padding: 1%;
   pointer-events: none;
   cursor: not-allowed;
 }
